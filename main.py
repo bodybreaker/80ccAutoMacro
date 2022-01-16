@@ -29,7 +29,6 @@ for index,line in enumerate(file):
     if index == 3:
         HOPE_TIME = line.split(',')
 
-
 cookies = {}
 res = r.post(LOGIN_URL,data={'memb_inet_no':ID,'memb_inet_pass':PW},headers={
     'user-agent':USER_AGENT
@@ -120,3 +119,4 @@ while True:
     time.sleep(0.3)
 
 #print(soup.prettify())
+#pyinstaller --onefile main.py
