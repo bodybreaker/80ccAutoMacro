@@ -1,6 +1,8 @@
 import requests as r
 from bs4 import BeautifulSoup as bs
 import time
+import os
+
 
 USER_AGENT = "Mozilla/5.0 (iPhone; CPU iPhone OS 10_3_1 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.0 Mobile/14E304 Safari/602.1"
 LOGIN_URL = "http://www.palgong-cc.co.kr/mobile/login_ok.asp"
@@ -115,7 +117,8 @@ while True:
                             },cookies=cookies)
                         res.raise_for_status()
                         res.encoding='UTF-8'
-                        print("=======================예약 완료=======================")                        
+                        print("=======================예약 완료=======================")     
+                        os.system("pause")                   
     time.sleep(0.3)
 
 #print(soup.prettify())
