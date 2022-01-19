@@ -118,7 +118,8 @@ while True:
                         res.raise_for_status()
                         res.encoding='UTF-8'
                         print("=======================예약 완료=======================")     
-                        os.system("pause")                   
+                        os.system("pause")    
+                        os.exit()               
     time.sleep(0.3)
 
 #print(soup.prettify())
